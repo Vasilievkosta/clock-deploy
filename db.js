@@ -17,9 +17,9 @@ const pool = new Pool({
     connectionString: process.env.NODE_ENV === 'production' ? proConfig : devConfig,
 
     // to build heroku ssl needs to be uncommented
-    // ssl: {
-        // rejectUnauthorized: false
-    // }
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 
 module.exports = pool;
