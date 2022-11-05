@@ -79,8 +79,8 @@ app.post("/login", function (req, res) {
 
 	console.log(req.body);
 
-	// let valid = req.body.password === 'passwordsecret' && req.body.email === 'admin@example.com';
-	let valid = req.body.password === '1' && req.body.email === '1';
+	let valid = req.body.password === 'passwordsecret' && req.body.email === 'admin@example.com';
+	
 
 	console.log(valid);
 	if (!req.body) return res.sendStatus(400);
