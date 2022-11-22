@@ -14,8 +14,8 @@ const NavBar = () => {
     return (
         <div className='navbar'>
             <NavLink to={'/'}>
-				<img className='navbar__img' src={imageLogo} alt='logo'/>
-			</NavLink>
+                <img className='navbar__img' src={imageLogo} alt='logo' />
+            </NavLink>
 
             {
                 <ul className='navbar__list'>

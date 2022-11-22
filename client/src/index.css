@@ -198,3 +198,7 @@ body {
 .table tbody {
   background-color: #cecece;
 }
+
+.table td {
+  padding: 5px;
+}
