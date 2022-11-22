@@ -8,7 +8,7 @@ export const publicRoutes = [
         Component: Admin
     },
     {
-        path: '/master',
+        path: '/panel',
         Component: Master
     },
     {

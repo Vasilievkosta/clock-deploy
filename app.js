@@ -12,17 +12,17 @@ app.use(cors());
 app.use(express.json());
 app.use('/api', router);
 
-app.use(express.static('./client/build'));
+// app.use(express.static('./client/build'));
 // console.log(__dirname);
 
 if (process.env.NODE_ENV === 'production') {
 	app.use(express.static(path.join(__dirname, 'client/build')));
 }
 
-app.post("/login", function (req, res) {
+app.post("/login2", function (req, res) {
 	console.log(req.body);
-	// let valid = req.body.password === 'passwordsecret' && req.body.email === 'admin@example.com';
-	let valid = req.body.password === '1' && req.body.email === '1';
+	let valid = req.body.password === 'passwordsecret' && req.body.email === 'admin@example.com';
+	// let valid = req.body.password === '1' && req.body.email === '1';
 	console.log(valid);
 	if (!req.body) return res.sendStatus(400);
 	res.json(valid);

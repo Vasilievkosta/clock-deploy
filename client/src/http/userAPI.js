@@ -6,7 +6,7 @@ const $host = axios.create({
 
 export const login = async (email, password) => {
 
-    const { data } = await $host.post('/login', { email, password });
+    const { data } = await $host.post('/login2', { email, password });
     return data;
 }
 

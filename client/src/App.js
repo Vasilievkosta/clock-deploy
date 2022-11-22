@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import AppRouter from './components/AppRouter';
+import FrontRouter from './components/FrontRouter';
 
 const App = () => {
-	
-	return (
+
+  return (
     <BrowserRouter>
       <NavBar />
-      <AppRouter />
+      <FrontRouter />
     </BrowserRouter>
-	);
+  );
 };
 
 export default App;

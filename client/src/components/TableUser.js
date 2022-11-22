@@ -3,8 +3,6 @@ import React from 'react';
 
 const TableUser = ({ user, removeUser }) => {
 
-    console.log(user)
-
     return (
         <table className="table">
             <thead>

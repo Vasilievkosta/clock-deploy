@@ -20,10 +20,10 @@ const NavBar = () => {
             {
                 <ul className='navbar__list'>
                     <li className='navbar__item'>
-                        <button className='navbar__link' onClick={() => navigate('/login')}>Admin panel</button>
+                        <button className='navbar__link' onClick={() => navigate('/login')}>admin panel</button>
                     </li>
                     <li className='navbar__item'>
-                        <button className='navbar__link' onClick={() => logOut()}>About us</button>
+                        <button className='navbar__link' onClick={() => logOut()}>about us</button>
                     </li>
 
                 </ul>

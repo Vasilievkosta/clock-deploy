@@ -14,7 +14,7 @@ const Admin = () => {
             let data = await login(email, password);
 
             console.log({ data })
-            data ? navigate('/master') : alert("Не правильный пароль или логин.");
+            data ? navigate('/panel') : alert("Не правильный пароль или логин.");
 
         } catch (e) {
             alert(e.response.data.message);
@@ -25,17 +25,7 @@ const Admin = () => {
         <div className="auth" >
 
             <h2 className="auth__title">{'Авторизация админа'}</h2>
-            {/* <div>
-                {{ data } === 'ADMIN' ?
-                    <p className="auth__acc">
-                        Войдите
-                    </p>
-                    :
-                    <p className="auth__acc">
-                        Не правильный пароль или логин
-                    </p>
-                }
-            </div> */}
+
             <form>
                 <input className="auth__input" placeholder='Введите ваш email...' type='text' value={email} onChange={e => setEmail(e.target.value)} />
                 <p></p>
